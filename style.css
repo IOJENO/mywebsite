@@ -166,27 +166,17 @@ a{
 }
 
 @keyframes slide{
+  0% { transform: translateX(0); } /* img 1 - no pause */
+  12.5% { transform: translateX(-470px); } /* slide to img 2 */
   
-  /* Image 1 - pause */
-  0%, 25% { transform: translateX(0); }
+  12.5%, 25% { transform: translateX(-470px); } /* img 2 pause */
+  37.5% { transform: translateX(-940px); } /* slide to img 3 */
   
-  /* Slide to Image 2 */
-  33.33% { transform: translateX(-470px); }
-  
-  /* Image 2 - pause */
-  33.33%, 58.33% { transform: translateX(-470px); }
-  
-  /* Slide to Image 3 */
-  66.66% { transform: translateX(-940px); }
-  
-  /* Image 3 - pause */
-  66.66%, 91.66% { transform: translateX(-940px); }
-  
-  /* Slide to Image 4 */
-  100% { transform: translateX(-1430px); }
+  37.5%, 50% { transform: translateX(-940px); } /* img 3 pause */
 
+  
+  62.5%, 100% { transform: translateX(-1434px); } /* img 4 - ends here */
 }
-
 
 .explore p{
   background-color: rgba(0, 4, 241, 0.516);
