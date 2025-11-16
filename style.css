@@ -42,7 +42,6 @@ header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 1rem 18%;
   font-size: larger;
   color: white;
@@ -62,7 +61,6 @@ header{
 
 }
 .header-back{
-
   width: 100%;
   background-color: rgba(25, 14, 72, 0.379);
   backdrop-filter: blur(2px); 
@@ -110,7 +108,7 @@ a{
 .intro{
    display: flex;
    justify-content: space-between;
-   max-width: 70%;
+   max-width: 1350px;
    align-items: center;
   color: white;
    margin: 14rem auto;
@@ -196,14 +194,15 @@ a{
 }
 
 .catagories{
+  
   color: white;
   font-size: 130%;
-  margin: 20rem auto;
+  margin: 16rem auto;
   padding-top: 10rem;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 .catagories-title{
-
+    max-width: 1200px;
   font-size: 150%;
   font-weight: bold;
 }
@@ -212,10 +211,11 @@ a{
 .sub-catagories ul{
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 4rem;
-  margin-top: 5rem;
+  gap: 2rem;
+
 
 }
 
@@ -224,6 +224,8 @@ a{
     padding: 1rem 2rem;
     box-shadow: 0px -7px 15px  rgba(255, 255, 255, 0.2), 0px 6px 100px rgba(0, 0, 0, 0.19);
     text-align: center;
+    margin: 5.6rem 30px 0 30px;
+
     position: relative;
 }
 
@@ -235,7 +237,7 @@ a{
   width: 100%;
   text-align: center;
   border-radius: 5%;
-  box-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 6px 100px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 15px  rgba(255, 255, 255, 0.2), 0px 0px 100px rgba(0, 0, 0, 0.19);
   background: rgba(0, 0, 0, 0.5)
   
 }
@@ -336,15 +338,25 @@ footer{
 
   }
 
+
+  .intro{
+    display:block;
+    justify-content: center;
+  }
+
   
   .subintro{
+    
+    margin: 20px;
     display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
 
   }
+
+  
   .navigation ul{
   display: flex;
   gap: 3rem;
@@ -352,22 +364,6 @@ footer{
   }
 
 
-
-
-  .catagories{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    margin: 10%;
-
-  }
-  .sub-catagories ul{
-   display: flex;
-   flex-direction: column;
-   gap: 10rem;
-}
 .catagories-title{
   text-align: center;
 }
